@@ -9,7 +9,60 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <button type="button">Submit</button>
-    
+    <section class="main-container">
+        <h2 class="logo">Password Generater</h2>
+        <div class="pwd-head">
+            <input type="text" placeholder="Password">
+            <button class="btn-copy"><img src="Images/icon-copy.svg" alt=""></button>
+        </div>
+        <section class="pwd-body">
+            <div class="flex1">
+                <h4>Character length</h4>
+                <h3 class="select-num">10</h3>
+            </div>
+            <form action="">
+                <input class="range" type="range" min="1" max="25" vlaue="10" id="amount">
+                <br>
+
+                <div class="foam-flex">
+                    <div class="check-container">
+                        <img class="checkmark" src="Images/icon-check.svg" alt="" id="uppercase">
+                    </div>
+                    <p class="label">include UpperCase Letters</p>
+                </div>
+                <div class="foam-flex">
+                    <div class="check-container">
+                        <img class="checkmark" src="Images/icon-check.svg" alt="" id="uppercase">
+                    </div>
+                    <p class="label">include LowerCase Letters</p>
+                </div>
+                <div class="foam-flex">
+                    <div class="check-container">
+                        <img class="checkmark" src="Images/icon-check.svg" alt="" id="numbers">
+                    </div>
+                    <p class="label">include Numbers</p>
+                </div>
+                <div class="foam-flex">
+                    <div class="check-container">
+                        <img class="checkmark" src="Images/icon-check.svg" alt="" id="uppercase">
+                    </div>
+                    <p class="label">include Symbols</p>
+                </div>
+                <article class="show-strength">
+                    <h4>STRENGTH</h4>
+                    <div class="medium">
+                        <h4>MEDIUM</h4>
+                        <div class="box-container">
+                            <img class="icon" src="Images/square-regular.svg" alt="">
+                            <img class="icon" src="Images/square-regular.svg" alt="">
+                            <img class="icon" src="Images/square-regular.svg" alt="">
+                            <img class="icon" src="Images/square-regular.svg" alt="">
+                        </div>
+                    </div>
+                </article>
+                <BUtton class="submit" type="submit">GENERATE <img src="Images/icon-arrow-right.svg" alt=""></BUtton>
+            </form>
+        </section>
+    </section>
 </body>
 </html>

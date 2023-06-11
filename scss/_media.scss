@@ -1,0 +1,57 @@
+@media (min-width:70em){ 
+    .main-container {
+        max-width: 700px;
+        margin-top: 10vh;
+        gap: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    .pwd-head {
+        padding: 2em;
+
+        input {
+            font-size: 1.5rem;
+        }
+    }
+    .pwd-body {
+        padding: 2em;
+    }
+    .show-strength {
+        margin-top: 2rem;
+        padding: 1.5em;
+    }
+    .medium {
+        display: flex;
+        gap: 2rem;
+
+        h4 {
+            font-size: 1.25rem;
+        }
+    }
+    .submit {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .icon {
+        width: 25px;
+    }
+    input[type="range"] {
+        background-color: $green;
+        border-radius: 15px;
+        height: 13px;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: $card-color;
+        cursor:pointer ;
+        box-shadow: 0 0 4px 0 #555;
+    }
+}
