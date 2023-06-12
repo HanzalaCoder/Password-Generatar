@@ -13,7 +13,7 @@ body {
 }
 
 .main-container {
-    width: 85%;
+    width: 90%;
     max-width: 400px;
     display: flex;
     flex-direction: column;
@@ -49,9 +49,18 @@ body {
 }
 
 .btn-copy {
-    margin-left: auto;
     background: transparent;
     border: none;
+   
+}
+.clipboard {
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+}
+.clipboard-msg {
+    display: none;
+    color: $green;
 }
 
 .pwd-body {
@@ -79,7 +88,7 @@ input[type="range"] {
     -webkit-appearance: none;
     background-color: $green;
     border-radius: 15px;
-    height: 7px;
+    height: 8px;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -90,6 +99,9 @@ input[type="range"]::-webkit-slider-thumb {
     background: $card-color;
     cursor:pointer ;
     box-shadow: 0 0 2px 0 #555;
+}
+input[type="range"]::-webkit-slider-thumb:hover,input[type="range"]::-webkit-slider-thumb:focus-visible {
+    background: $black;
 }
 
 .foam-flex {
@@ -105,13 +117,14 @@ input[type="range"]::-webkit-slider-thumb {
     height: 15px;
     display: grid;
     place-content: center;
-    padding: .5em .6em;
+    padding: .5em;
+    transition: all 500ms ease-in ;
     
     
 }
-.check-container-active {
-    border: 1px solid $card-color;
-    padding: .5em;
+.checkmark {
+    transition: all 500ms ease-in ;
+
 }
 
 .show-strength {
@@ -134,11 +147,38 @@ input[type="range"]::-webkit-slider-thumb {
     width: 100%;
     background-color: $green;
     padding: 1em;
-
+    cursor: pointer;
     img {
-        margin-left: 1rem
+        margin-left: 1rem;
+ 
     }
 
 }
- 
+.submit:hover {
+    background: $black;
+    color: $green;
+    border:  2px solid $green;
+}
+
+/* javascript classe */
+.check-container-active {
+    background: none;
+    border: 1px solid $card-color;
+    padding: .5em;
+}
+
+.checkmark-delete {
+    transform: scale(0);
+}
+
+.clipboard-msg-active {
+    display: block
+}
+
+
+
+
+
+
+
 @import 'media';
